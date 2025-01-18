@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures</title>
+    <link rel="stylesheet" href="./css/creatures.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const headers = document.querySelectorAll('.accordion-header');
+
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        document.querySelectorAll('.accordion-content').forEach(item => item.style.display = 'none');
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="center-title">Grommet Chod</h1>
+        <div class="nav-options">
+            <a href="index.html">About</a>
+            <a href="creatures.html">Creatures</a>
+        </div>
+    </nav>
+    <h1 style="margin-top: 100px;">Creature Encyclopedia</h1>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <img src="./images/icons/tode.gif" alt="Buford">
+                <h2>Buford</h2>
+                <img src="./images/types/CHUD.png" alt="Chud type">
+            </div>
+            <div class="accordion-content">
+                <div class="row">
+                    <img src="./images/forward/Buford.gif" alt="Buford Forward">
+                    <img src="./images/backward/Buford.gif" alt="Buford Backward">
+                </div>
+                <div class="row">
+                    <div>Buford is a slimy individual who likes to stick around</div>
+                </div>
+                <div class="row subtitle">
+                    <div>Move 1</div>
+                </div>
+                <div class="row">
+                    <div>Slimy Bubble</div>
+                    <div>A slimy bubble is spat at opponents, inflicting damage and lowering their speed.</div>
+                </div>
+                <div class="row subtitle">
+                    <div>Move 2</div>
+                </div>
+                <div class="row">
+                    <div>Moisten</div>
+                    <div>Buford coats himself in chod allowing his moist skin to regenerate wounds</div>
+                </div>
+                <div class="row subtitle">
+                    <div>Ability</div>
+                </div>
+                <div class="row">
+                    <div>Camouflage</div>
+                    <div>Blends into the surroundings to become invisible.</div>
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="creature2.gif" alt="Neighbor's Dog">
+                    <h2>Neighbor's Dog</h2>
+                </div>
+                <div class="accordion-content">
+                    <p>Details about Creature 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="creature3.gif" alt="Creature 3">
+                    <h2>Creature 3</h2>
+                </div>
+                <div class="accordion-content">
+                    <p>Details about Creature 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

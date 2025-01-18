@@ -1,0 +1,140 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.center-title {
+    position: absolute;
+    left: 50%; /* Start at the center */
+    transform: translateX(-50%); /* Offset by half its width */
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+.nav-options {
+    display: flex; /* Keep links side by side */
+    gap: 20px; /* Add space between links */
+    margin-left: auto; /* Push the navigation options to the right */
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-options a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #6A11CB, #2575FC);
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.accordion {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.accordion-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.accordion-header h2 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.3s ease;
+}
+
+.accordion-content .row img {
+    flex: 1;
+    margin-right: 10px;
+}
+.accordion-content .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.accordion-content .row div {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.accordion-content .flavor-text {
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+.subtitle{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
